@@ -1,0 +1,86 @@
+﻿
+@{
+    ViewBag.Title = "SearchSalesPerson";
+}
+@model List<SalesPerson.Models.commission>
+
+
+
+<h3>SearchSalesPerson</h3>
+
+<form     method="post" action="">
+    <table class="table-bordered">
+        <tr>
+            <td> <label>SalesPerson Name :</label></td>
+            <td> <input type="text" name="name" required /></td>
+
+</tr>
+
+        <tr>
+            <td>
+                <label>Month :</label>
+            </td>
+            <td> <input type="text" name="month" required /></td>
+
+</tr>
+        <tr>
+
+            <td>
+                <label>Year :</label></td>
+            <td>  <input type="text" name="year" required /></td>
+
+</tr>
+    </table>
+    <input type="submit" value="Search" />
+</form>
+
+
+<h4> @Html.ActionLink("Back To Admin Page", "IfAdmin", "IfAdminOrPerson")</h4> 
+&nbsp; &nbsp; 
+<h4><a href="~/LogInOut/Login">LogOut</a></h4>
+
+<table class="table-bordered">
+
+<thead>
+    <td>PersonNumber</td>
+    <td>PersonName</td>
+    <td>Month</td>
+    <td>Year</td>
+    <td>Southern</td>
+    <td>Coastel</td>
+    <td>Northern</td>
+    <td>Eastern</td>
+    <td>Lebanon</td>
+    <td>Commission</td>
+
+</thead>
+    <tbody>
+        @{
+            if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.personId</td>
+                        <td>@item.salesPerson.personName</td>
+                        <td>@item.month</td>
+                        <td>@item.year</td>
+                        <td>@item.southern</td>
+                        <td>@item.coastal</td>
+                        <td>@item.northern_</td>
+                        <td>@item.eastern</td>
+                        <td>@item.Lebanon</td>
+                        <td>@item.commission1</td>
+
+            </tr>
+                }
+            }
+
+        }
+    </tbody>
+</table>
+
+@if(ViewBag.error != null) { @ViewBag.error }
+
+

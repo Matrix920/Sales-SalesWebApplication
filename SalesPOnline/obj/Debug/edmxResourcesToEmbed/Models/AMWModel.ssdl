@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBAMWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="commission">
+    <Key>
+      <PropertyRef Name="commissionId" />
+    </Key>
+    <Property Name="commissionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="personId" Type="int" Nullable="false" />
+    <Property Name="southern" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="coastal" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="northern " Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="eastern" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="Lebanon" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="commission" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="month" Type="int" />
+    <Property Name="year" Type="int" />
+  </EntityType>
+  <EntityType Name="region">
+    <Key>
+      <PropertyRef Name="regionId" />
+    </Key>
+    <Property Name="regionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="regionName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="salesPerson">
+    <Key>
+      <PropertyRef Name="personId" />
+    </Key>
+    <Property Name="personId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="personNumber" Type="int" Nullable="false" />
+    <Property Name="personName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="personPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="image" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="registrationDate" Type="date" Nullable="false" />
+    <Property Name="personRegionId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_commission_salesPerson">
+    <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="1" />
+    <End Role="commission" Type="Self.commission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="salesPerson">
+        <PropertyRef Name="personId" />
+      </Principal>
+      <Dependent Role="commission">
+        <PropertyRef Name="personId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesPerson_region">
+    <End Role="region" Type="Self.region" Multiplicity="1" />
+    <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="region">
+        <PropertyRef Name="regionId" />
+      </Principal>
+      <Dependent Role="salesPerson">
+        <PropertyRef Name="personRegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBAMWModelStoreContainer">
+    <EntitySet Name="commission" EntityType="Self.commission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="region" EntityType="Self.region" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="salesPerson" EntityType="Self.salesPerson" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_commission_salesPerson" Association="Self.FK_commission_salesPerson">
+      <End Role="salesPerson" EntitySet="salesPerson" />
+      <End Role="commission" EntitySet="commission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesPerson_region" Association="Self.FK_salesPerson_region">
+      <End Role="region" EntitySet="region" />
+      <End Role="salesPerson" EntitySet="salesPerson" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

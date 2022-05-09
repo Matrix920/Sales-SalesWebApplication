@@ -1,0 +1,171 @@
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\ApplicationInsights.config
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\csc.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\System.Collections.Immutable.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\System.Reflection.Metadata.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\vbc.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\VBCSCompiler.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\roslyn\VBCSCompiler.exe.config
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\SalesPerson.dll.config
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\SalesPerson.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\SalesPerson.pdb
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Antlr3.Runtime.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\EntityFramework.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\EntityFramework.SqlServer.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.DependencyCollector.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.Web.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.WindowsServer.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.ApplicationInsights.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.Web.Infrastructure.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Newtonsoft.Json.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Helpers.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Mvc.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Optimization.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Razor.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.Deployment.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.Razor.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\WebGrease.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\EntityFramework.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\EntityFramework.SqlServer.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.DependencyCollector.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.Web.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.AI.WindowsServer.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.ApplicationInsights.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Helpers.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Mvc.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Optimization.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.Razor.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.Deployment.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\System.Web.WebPages.Razor.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Antlr3.Runtime.pdb
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\bin\Newtonsoft.Json.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\obj\Debug\SalesPerson.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\obj\Debug\SalesPerson.pdb
+D:\MWS\F18\AIR\New folder\AMW_HW\AMW_HW\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\ApplicationInsights.config
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\csc.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\vbc.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\VBCSCompiler.exe
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\SalesPerson.dll.config
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\SalesPerson.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\SalesPerson.pdb
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Antlr3.Runtime.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\EntityFramework.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\EntityFramework.SqlServer.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.Web.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.ApplicationInsights.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Newtonsoft.Json.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Helpers.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Mvc.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Optimization.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Razor.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Deployment.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Razor.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\WebGrease.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\EntityFramework.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\EntityFramework.SqlServer.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.Web.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.ApplicationInsights.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Helpers.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Mvc.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Optimization.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.Razor.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Deployment.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Razor.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Antlr3.Runtime.pdb
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\bin\Newtonsoft.Json.xml
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\obj\Debug\SalesPerson.dll
+D:\MWS\F18\AIR\New folder\AMW_HW\SalesPOnline\obj\Debug\SalesPerson.pdb
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\ApplicationInsights.config
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\csc.exe
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\vbc.exe
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\VBCSCompiler.exe
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\SalesPerson.dll.config
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\SalesPerson.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\SalesPerson.pdb
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Antlr3.Runtime.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\EntityFramework.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\EntityFramework.SqlServer.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.Web.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.ApplicationInsights.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Newtonsoft.Json.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Helpers.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Mvc.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Optimization.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Razor.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Deployment.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Razor.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\WebGrease.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\EntityFramework.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\EntityFramework.SqlServer.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.Web.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.ApplicationInsights.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Helpers.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Mvc.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Optimization.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.Razor.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Deployment.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\System.Web.WebPages.Razor.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Antlr3.Runtime.pdb
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\bin\Newtonsoft.Json.xml
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\obj\Debug\Website.csprojResolveAssemblyReference.cache
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\obj\Debug\SalesPerson.dll
+D:\MWS\F18\AMW\MWT_2\AMW_HW\SalesPOnline\obj\Debug\SalesPerson.pdb

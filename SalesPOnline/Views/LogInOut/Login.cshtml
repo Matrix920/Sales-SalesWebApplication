@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<div style="text-align:center;" >
+    <h2 class="">Login</h2>
+    <form method="post" action="" class="form-group" >
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Enter UserName :</label>
+               <div class="col-sm-10">
+                <input type="text" class="form-control"  name="username">
+            </div> <br />
+             <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Enter Password :</label>
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" name="password">
+              </div>
+
+
+                    <br />
+                 <button type="submit" class="btn btn-primary mb-2">login</button>
+                    
+</form>
+    <br />
+
+    @if (ViewBag.error != null)
+    { <p>The user name or password is wrong </p>}
+</div>

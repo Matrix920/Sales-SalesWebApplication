@@ -1,0 +1,77 @@
+﻿
+
+@{
+    ViewBag.Title = "EditSalesPerson";
+}
+
+@model SalesPerson.Models.salesPerson
+<div >
+    <h3>EditSalesPerson</h3>
+    <hr />
+    @using (Html.BeginForm("EditSalesPerson", "OpreationAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <img src="~/@Model.image.ToString()" width="100px" height="100px" />
+        <dive>
+            <table class="table" style="width:auto">
+                <input type="hidden" name="number" value="@Model.personNumber" />
+                <tr>
+                    <td> SalesPerson Number:    <td>
+                    <td> @Model.personNumber    <td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        Enter SalesPerson Name:
+                    </td>
+                    <td>  <input type="text" name="username" value="@Model.personName" /></td>
+</tr>
+
+                <tr>
+                    <td>
+                        Enter SalesPerson Password:
+                    </td>
+                    <td>  <input type="text" name="password" value="@Model.personPassword" /> </td>
+</tr>
+
+                <tr>
+                    <td>SalesPerson Registeration: </td>
+                    <td>@Model.registrationDate.ToShortDateString() </td>
+</tr>
+
+
+
+                <tr>
+                    <td> Select Region:</td>
+                    <td>
+                        <select name="region">
+                            <option value="@Model.personRegionId" selected>@Model.region.regionName</option>
+                            <option value="1">Southern region </option>
+                            <option value="2">Coastal region  </option>
+                            <option value="3">Northern Region </option>
+                            <option value="4">Eastern Region  </option>
+                            <option value="5">    Lebanon     </option>
+                        </select>
+                    </td>
+</tr>
+
+                <tr>
+                    
+                    <td> Choose SalesPerson Image: </td>
+                    <td> <input type="file" name="file1" /></td>
+</tr>
+
+</table>
+            <hr />
+            <input type="submit" value="Edit SalesPerson" /> <br />
+        </dive>
+    }
+   
+    
+    <h4> <a href="~/OpreationAdmin/AllSalesPerson">Cancel</a> </h4>
+    <br />
+
+    @if (ViewBag.error != null)
+    { <p>There is wrong </p>}
+    
+</div>

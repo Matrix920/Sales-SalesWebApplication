@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBAMWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="commission">
+          <Key>
+            <PropertyRef Name="commissionId" />
+          </Key>
+          <Property Name="commissionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="personId" Type="int" Nullable="false" />
+          <Property Name="southern" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="coastal" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="northern " Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="eastern" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="Lebanon" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="commission" Type="decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="month" Type="int" />
+          <Property Name="year" Type="int" />
+        </EntityType>
+        <EntityType Name="region">
+          <Key>
+            <PropertyRef Name="regionId" />
+          </Key>
+          <Property Name="regionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="regionName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="salesPerson">
+          <Key>
+            <PropertyRef Name="personId" />
+          </Key>
+          <Property Name="personId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="personNumber" Type="int" Nullable="false" />
+          <Property Name="personName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="personPassword" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="image" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="registrationDate" Type="date" Nullable="false" />
+          <Property Name="personRegionId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_commission_salesPerson">
+          <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="1" />
+          <End Role="commission" Type="Self.commission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="salesPerson">
+              <PropertyRef Name="personId" />
+            </Principal>
+            <Dependent Role="commission">
+              <PropertyRef Name="personId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_salesPerson_region">
+          <End Role="region" Type="Self.region" Multiplicity="1" />
+          <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="regionId" />
+            </Principal>
+            <Dependent Role="salesPerson">
+              <PropertyRef Name="personRegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBAMWModelStoreContainer">
+          <EntitySet Name="commission" EntityType="Self.commission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="region" EntityType="Self.region" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="salesPerson" EntityType="Self.salesPerson" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_commission_salesPerson" Association="Self.FK_commission_salesPerson">
+            <End Role="salesPerson" EntitySet="salesPerson" />
+            <End Role="commission" EntitySet="commission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_salesPerson_region" Association="Self.FK_salesPerson_region">
+            <End Role="region" EntitySet="region" />
+            <End Role="salesPerson" EntitySet="salesPerson" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBAMWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="commission">
+          <Key>
+            <PropertyRef Name="commissionId" />
+          </Key>
+          <Property Name="commissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="personId" Type="Int32" Nullable="false" />
+          <Property Name="southern" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="coastal" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="northern_" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="eastern" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="Lebanon" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="commission1" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+          <Property Name="month" Type="Int32" />
+          <Property Name="year" Type="Int32" />
+          <NavigationProperty Name="salesPerson" Relationship="Self.FK_commission_salesPerson" FromRole="commission" ToRole="salesPerson" />
+        </EntityType>
+        <EntityType Name="region">
+          <Key>
+            <PropertyRef Name="regionId" />
+          </Key>
+          <Property Name="regionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="regionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="salesPerson" Relationship="Self.FK_salesPerson_region" FromRole="region" ToRole="salesPerson" />
+        </EntityType>
+        <EntityType Name="salesPerson">
+          <Key>
+            <PropertyRef Name="personId" />
+          </Key>
+          <Property Name="personId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="personNumber" Type="Int32" Nullable="false" />
+          <Property Name="personName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="personPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="registrationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="personRegionId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="commission" Relationship="Self.FK_commission_salesPerson" FromRole="salesPerson" ToRole="commission" />
+          <NavigationProperty Name="region" Relationship="Self.FK_salesPerson_region" FromRole="salesPerson" ToRole="region" />
+        </EntityType>
+        <Association Name="FK_commission_salesPerson">
+          <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="1" />
+          <End Role="commission" Type="Self.commission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="salesPerson">
+              <PropertyRef Name="personId" />
+            </Principal>
+            <Dependent Role="commission">
+              <PropertyRef Name="personId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_salesPerson_region">
+          <End Role="region" Type="Self.region" Multiplicity="1" />
+          <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="region">
+              <PropertyRef Name="regionId" />
+            </Principal>
+            <Dependent Role="salesPerson">
+              <PropertyRef Name="personRegionId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBAMWEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="commission" EntityType="Self.commission" />
+          <EntitySet Name="region" EntityType="Self.region" />
+          <EntitySet Name="salesPerson" EntityType="Self.salesPerson" />
+          <AssociationSet Name="FK_commission_salesPerson" Association="Self.FK_commission_salesPerson">
+            <End Role="salesPerson" EntitySet="salesPerson" />
+            <End Role="commission" EntitySet="commission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_salesPerson_region" Association="Self.FK_salesPerson_region">
+            <End Role="region" EntitySet="region" />
+            <End Role="salesPerson" EntitySet="salesPerson" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBAMWModelStoreContainer" CdmEntityContainer="DBAMWEntities">
+          <EntitySetMapping Name="commission">
+            <EntityTypeMapping TypeName="DBAMWModel.commission">
+              <MappingFragment StoreEntitySet="commission">
+                <ScalarProperty Name="commissionId" ColumnName="commissionId" />
+                <ScalarProperty Name="personId" ColumnName="personId" />
+                <ScalarProperty Name="southern" ColumnName="southern" />
+                <ScalarProperty Name="coastal" ColumnName="coastal" />
+                <ScalarProperty Name="northern_" ColumnName="northern " />
+                <ScalarProperty Name="eastern" ColumnName="eastern" />
+                <ScalarProperty Name="Lebanon" ColumnName="Lebanon" />
+                <ScalarProperty Name="commission1" ColumnName="commission" />
+                <ScalarProperty Name="month" ColumnName="month" />
+                <ScalarProperty Name="year" ColumnName="year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="region">
+            <EntityTypeMapping TypeName="DBAMWModel.region">
+              <MappingFragment StoreEntitySet="region">
+                <ScalarProperty Name="regionId" ColumnName="regionId" />
+                <ScalarProperty Name="regionName" ColumnName="regionName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="salesPerson">
+            <EntityTypeMapping TypeName="DBAMWModel.salesPerson">
+              <MappingFragment StoreEntitySet="salesPerson">
+                <ScalarProperty Name="personId" ColumnName="personId" />
+                <ScalarProperty Name="personNumber" ColumnName="personNumber" />
+                <ScalarProperty Name="personName" ColumnName="personName" />
+                <ScalarProperty Name="personPassword" ColumnName="personPassword" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
+                <ScalarProperty Name="personRegionId" ColumnName="personRegionId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

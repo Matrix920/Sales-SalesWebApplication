@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "InsertSalesPersonCommission";
+}
+
+@model SalesPerson.Models.salesPerson
+<h2>InsertSalesPersonCommission</h2>
+
+
+SalesPerson Number :@Model.personNumber   <br />
+SalesPerson Name :  @Model.personName    <br />
+SalesPerson Region :  @Model.region.regionName    <br />
+
+<form method="post" action="">
+    <input type="hidden" name="personId" value="@Model.personId" />
+    <input type="hidden" name="personRegionId" value="@Model.personRegionId" />
+
+    <table class="table-bordered">
+        <tr>
+            <td> Month:</td>
+            <td><input type="text" name="month" required /> </td>
+</tr>
+        <tr>
+
+            <td> Year:</td>
+<td> <input type="text" name="year" /> </td>
+
+</tr>
+        <tr>
+            <td> Registration Date : </td>
+            <td> @Model.registrationDate.ToShortDateString() </td>
+
+</tr>
+        <tr>
+
+            <td>
+                Southern region :
+            </td>
+            <td>  <input type="text" name="southern" required /> </td>
+</tr>
+        <tr>
+            <td> Coastal region :</td>
+            <td> <input type="text" name="coastal" required /></td>
+</tr>
+        <tr>
+            <td>
+                Northern Region :
+            </td>
+            <td>  <input type="text" name="northern" required /></td>
+</tr>
+        <tr>
+            <td>
+                Eastern Region :
+            </td>
+            <td>  <input type="text" name="eastern" required /></td>
+</tr>
+        <tr>
+            <td>
+                Lebanon :
+            </td>
+            <td><input type="text" name="lebanon" required /></td>
+</tr>
+
+</table>
+    <br />
+    <input type="submit" value="Enter Commission" />
+</form>
+<br />
+<a class="btn-link"    href="~/LogInOut/Login">LogOut</a>
+
+@if(ViewBag.error != null) { @ViewBag.error}

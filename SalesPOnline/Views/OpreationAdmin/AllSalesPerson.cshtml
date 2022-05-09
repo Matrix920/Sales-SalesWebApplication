@@ -1,0 +1,68 @@
+﻿@model List<SalesPerson.Models.salesPerson>
+@{
+    ViewBag.Title = "AllSalesPerson";
+}
+
+<h2>AllSalesPerson</h2>
+
+<table class="table">
+    <tr>
+        <td>  personNumber </td>
+        <td> personName</td>
+        <td> personPassword</td>
+        <td> registrationDate</td>
+        <td> region.regionName</td>
+        <td> image</td>
+    </tr>
+
+
+    @{
+        foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.personNumber </td>
+                <td> @item.personName</td>
+                <td> @item.personPassword</td>
+                <td> @item.registrationDate.ToShortDateString()</td>
+                <td> @item.region.regionName</td>
+
+                <td><img src="~/@item.image.ToString()" width="80px" height="80px" />
+</td>
+               
+
+            </tr>
+        }
+    }
+</table>
+<br />
+<table>
+    <tr>
+        <td>
+            <form method="post" action="" class="form-control" >
+                Enter Number of SalesPerson for Edit : <input type="text" name="salesPersonNumber" />
+                <br />
+                <input type="submit" value="Edit" />
+
+            </form>
+        </td>
+        <td>
+     @using (Html.BeginForm("DeleteSalesPerson", "OpreationAdmin", FormMethod.Post))
+     {
+        <form class="form-group">
+            <label>Enter Number of SalesPerson for delete</label>
+            <input type="text" name="salesPersonNumber" />
+            <br />
+            <input type="submit" value="Delete" />
+        </form>
+     }
+        </td>
+    </tr>
+</table>
+<hr />
+<h4 style="text-align:center"> @Html.ActionLink("Back To Admin Page", "IfAdmin", "IfAdminOrPerson")</h4>
+
+<h4 style="text-align:center">
+    <a href="~/LogInOut/Login">LogOut</a> </h4>
+    <br />
+    @if (ViewBag.error == true)
+    { <p>error . enter new SAlesPerson Number</p>}

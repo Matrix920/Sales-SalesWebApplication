@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBAMWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="commission">
+    <Key>
+      <PropertyRef Name="commissionId" />
+    </Key>
+    <Property Name="commissionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="personId" Type="Int32" Nullable="false" />
+    <Property Name="southern" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="coastal" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="northern_" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="eastern" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="Lebanon" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="commission1" Type="Decimal" Precision="18" Scale="3" Nullable="false" />
+    <Property Name="month" Type="Int32" />
+    <Property Name="year" Type="Int32" />
+    <NavigationProperty Name="salesPerson" Relationship="Self.FK_commission_salesPerson" FromRole="commission" ToRole="salesPerson" />
+  </EntityType>
+  <EntityType Name="region">
+    <Key>
+      <PropertyRef Name="regionId" />
+    </Key>
+    <Property Name="regionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="regionName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="salesPerson" Relationship="Self.FK_salesPerson_region" FromRole="region" ToRole="salesPerson" />
+  </EntityType>
+  <EntityType Name="salesPerson">
+    <Key>
+      <PropertyRef Name="personId" />
+    </Key>
+    <Property Name="personId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="personNumber" Type="Int32" Nullable="false" />
+    <Property Name="personName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="personPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="registrationDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="personRegionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="commission" Relationship="Self.FK_commission_salesPerson" FromRole="salesPerson" ToRole="commission" />
+    <NavigationProperty Name="region" Relationship="Self.FK_salesPerson_region" FromRole="salesPerson" ToRole="region" />
+  </EntityType>
+  <Association Name="FK_commission_salesPerson">
+    <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="1" />
+    <End Role="commission" Type="Self.commission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="salesPerson">
+        <PropertyRef Name="personId" />
+      </Principal>
+      <Dependent Role="commission">
+        <PropertyRef Name="personId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_salesPerson_region">
+    <End Role="region" Type="Self.region" Multiplicity="1" />
+    <End Role="salesPerson" Type="Self.salesPerson" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="region">
+        <PropertyRef Name="regionId" />
+      </Principal>
+      <Dependent Role="salesPerson">
+        <PropertyRef Name="personRegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBAMWEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="commission" EntityType="Self.commission" />
+    <EntitySet Name="region" EntityType="Self.region" />
+    <EntitySet Name="salesPerson" EntityType="Self.salesPerson" />
+    <AssociationSet Name="FK_commission_salesPerson" Association="Self.FK_commission_salesPerson">
+      <End Role="salesPerson" EntitySet="salesPerson" />
+      <End Role="commission" EntitySet="commission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_salesPerson_region" Association="Self.FK_salesPerson_region">
+      <End Role="region" EntitySet="region" />
+      <End Role="salesPerson" EntitySet="salesPerson" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBAMWModelStoreContainer" CdmEntityContainer="DBAMWEntities">
+    <EntitySetMapping Name="commission">
+      <EntityTypeMapping TypeName="DBAMWModel.commission">
+        <MappingFragment StoreEntitySet="commission">
+          <ScalarProperty Name="commissionId" ColumnName="commissionId" />
+          <ScalarProperty Name="personId" ColumnName="personId" />
+          <ScalarProperty Name="southern" ColumnName="southern" />
+          <ScalarProperty Name="coastal" ColumnName="coastal" />
+          <ScalarProperty Name="northern_" ColumnName="northern " />
+          <ScalarProperty Name="eastern" ColumnName="eastern" />
+          <ScalarProperty Name="Lebanon" ColumnName="Lebanon" />
+          <ScalarProperty Name="commission1" ColumnName="commission" />
+          <ScalarProperty Name="month" ColumnName="month" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="region">
+      <EntityTypeMapping TypeName="DBAMWModel.region">
+        <MappingFragment StoreEntitySet="region">
+          <ScalarProperty Name="regionId" ColumnName="regionId" />
+          <ScalarProperty Name="regionName" ColumnName="regionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesPerson">
+      <EntityTypeMapping TypeName="DBAMWModel.salesPerson">
+        <MappingFragment StoreEntitySet="salesPerson">
+          <ScalarProperty Name="personId" ColumnName="personId" />
+          <ScalarProperty Name="personNumber" ColumnName="personNumber" />
+          <ScalarProperty Name="personName" ColumnName="personName" />
+          <ScalarProperty Name="personPassword" ColumnName="personPassword" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
+          <ScalarProperty Name="personRegionId" ColumnName="personRegionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

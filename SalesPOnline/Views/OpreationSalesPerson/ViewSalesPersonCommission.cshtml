@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "ViewSalesPersonCommission";
+}
+@model SalesPerson.Models.commission
+
+<h3 class="text-center">ViewSalesPersonCommission</h3>
+<div class="text-center">
+    <table class="table ">
+        <tr>
+            <td>SalesPerson Number :</td>
+            <td>@ViewBag.Number</td>
+        </tr>
+        <tr>
+            <td>SalesPerson Name :</td>
+            <td>@ViewBag.Name </td>
+        </tr>
+        <tr>
+            <td>Registration Date :</td>
+            <td>@ViewBag.Date</td>
+        </tr>
+        <tr>
+            <td> Month:</td>
+            <td>@Model.month</td>
+        </tr>
+        <tr>
+            <td> Year:</td>
+            <td>@Model.year</td>
+        </tr>
+        <tr>
+            <td> Southern region  :</td>
+            <td>@Model.southern.ToString()</td>
+        </tr>
+        <tr>
+            <td>Coastal region :</td>
+            <td>@Model.coastal.ToString()</td>
+        </tr>
+        <tr>
+            <td> Northern Region :</td>
+            <td>@Model.northern_.ToString()</td>
+        </tr>
+        <tr>
+            <td> Eastern Region :</td>
+            <td>@Model.eastern.ToString()</td>
+        </tr>
+        <tr>
+            <td>Lebanon :</td>
+            <td>@Model.Lebanon.ToString()</td>
+        </tr>
+        <tr>
+            <td>Commission  :</td>
+            <td>@Model.commission1.ToString()</td>
+        </tr>
+    </table>
+
+    <br />
+    <div class="btn-link">
+        <a href="~/OpreationSalesPerson/InsertSalesPersonCommission"> new insert</a>
+        <br />
+        <a href="~/LogInOut/Login">LogOut</a>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "AddSalesPerson";
+}
+
+
+<div ">
+    <h2>AddSalesPerson</h2>
+   <hr />
+@using (Html.BeginForm("AddSalesPerson", "OpreationAdmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{<div>
+     <table class="table">
+         <tr>
+             <td> Enter SalesPerson Number:</td>
+             <td> <input type="text" name="number" /></td>
+
+         </tr>
+         <tr>
+             <td>       Enter SalesPerson Name:  </td>
+             <td> <input type="text" name="username" /></td>
+
+         </tr>
+         <tr>
+             <td>      Enter SalesPerson Password:  </td>
+             <td> <input type="text" name="password" /></td>
+
+         </tr>
+         <tr>
+             <td>       Enter SalesPerson Registeration:  </td>
+             <td><input type="date" name="register" required/></td>
+
+         </tr>
+         <tr>
+             <td>    Select Region:  </td>
+             <td>
+                 <select name="region">
+                     <option value="1">Southern region </option>
+                     <option value="2">Coastal region  </option>
+                     <option value="3">Northern Region </option>
+                     <option value="4">Eastern Region  </option>
+                     <option value="5">    Lebanon     </option>
+                 </select>
+             </td>
+
+         </tr>
+         <tr>
+             <td>        Choose SalesPerson Image:  </td>
+             <td><input type="file" name="file1" /></td>
+
+         </tr>
+
+     </table>
+           
+     <br />
+             <input type="submit" value="Add SalesPerson" />
+            
+
+
+    </div>
+}
+    <hr />
+
+    <h4> @Html.ActionLink("Back To Admin Page", "IfAdmin", "IfAdminOrPerson")</h4>
+    <br />
+
+    <h4><a href="~/LogInOut/Login">LogOut</a></h4>
+    <br />
+    @if (ViewBag.error != null)
+    { <p>There is wrong </p>}
+</div>
